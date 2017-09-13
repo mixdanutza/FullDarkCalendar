@@ -1,0 +1,58 @@
+<h1 class="pageTitle">Calendar Schedule</h1>
+
+
+<form >
+    <input type='file' name='csv' id='scheduleFile' class="darkButton fileInput" accept='.csv' (change)="onFileChange($event.target.files)"><br><br>
+</form>
+<!--<button class="darkButton importButton" (click)="checkFile()"> Import Schedule CSV</button>-->
+
+
+<div id="wrapper">
+  <div id="calendar"></div>
+</div>
+
+
+
+
+<div id="eventForm" class="event">
+    <!-- Form content -->
+    <div class="event-content">
+        <span class="closeForm">&times;</span>
+        <h1>Add event</h1>
+        <div class="form-group">
+            <form (submit)="createEvent()">
+                <div>
+                    <input class="radio-button" id="radio1" type="radio" [(ngModel)]="new_event.type"  name="type" value="practice"  />
+                    <label class="radio_label" for="radio1">Practice</label>
+                    <input class="radio-button" id="radio2" type="radio" [(ngModel)]="new_event.type"  name="type" value="game">
+                    <label class="radio_label" for="radio2">Game</label>
+                    <input class="radio-button" id="radio3" type="radio" [(ngModel)]="new_event.type"  name="type" value="personal"  />
+                    <label class="radio_label" for="radio3">Personal</label>
+                    <input class="radio-button" id="radio4" type="radio" [(ngModel)]="new_event.type"  name="type" value="other">
+                    <label class="radio_label" for="radio4">Other</label>
+                </div>
+
+
+                <label class="form_label"  for="title">Title</label>
+                <input   class="form-control"  type="text"  [(ngModel)]="new_event.title" id="title" name="title" placeholder="Title..">
+
+                <div class="date_box">
+                    <label class="form_label"  for="start">Start date:</label>
+                    <input  class="form-control"   type="date"  [(ngModel)]="new_event.start" id="start" name="start" >
+                </div>
+                <div class="date_box">
+                    <label class="form_label"  for="end">End date:</label>
+                    <input   class="form-control"  type="date"  [(ngModel)]="new_event.end" id="end" name="end"  >
+                </div>
+
+                <label class="form_label"  for="location">Location:</label>
+                <input   class="form-control"  type="text"  [(ngModel)]="new_event.location" id="location" name="location" placeholder="Location.. e.g: Seattle,WA" >
+
+                <label class="form_label" for="description">Description:</label>
+                <textarea   class="form-control"  type="text"  [(ngModel)]="new_event.description" id="description" name="description" placeholder="Description here.." ></textarea>
+
+                <input class="submitForm darkButton" id="submitEvent" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>    
+</div>

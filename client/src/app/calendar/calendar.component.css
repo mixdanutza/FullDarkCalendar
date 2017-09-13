@@ -1,0 +1,134 @@
+/* EVENT  FORM CSS */
+/* The form (background) */
+@import "//fonts.googleapis.com/css?family=Quicksand";
+.pageTitle{
+	font-family: Quicksand;
+	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 26.4px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+.event {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Form Content */
+.event-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Form Close Button */
+.closeForm {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeForm:hover,
+.closeForm:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=text] {
+    margin:auto;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=date] {
+    margin: auto;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.submitForm[type=submit] {
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px #666;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px 12px;
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+.date_box{
+    display: inline-block;
+    width: 49%;
+}
+label.form_label{
+    float: left;
+}
+
+
+
+.oneEvent{
+  width: 100%;
+  color: white;
+  vertical-align: top;
+  display: block;
+  line-height: normal;
+  margin: 0 0 1% 0;
+  padding: 0px;
+  font-size: 92%;
+  height: 18%;
+  text-align: left;
+  background-color: #428A98;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+
+.displayDate{
+  width: 100%;
+  margin: 2% 10% 2% 40%;
+  display: block;
+  line-height: normal;
+  padding: 0px;
+}
+
+.importButton{
+    margin-left: 5%;
+    padding: 1%;
+}
+
+.fileInput{
+    margin-left: 5%;
+}
+
+
+
+
